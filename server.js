@@ -1,27 +1,20 @@
-const path = require('path');
-const express = require('express');
-const webpack = require('webpack');
-const config = require('./webpack.config.dev');
+var webpack = require('webpack');
+var WebpackDevServer = require('webpack-dev-server');
+var config = require('./webpack.config.dev');
+var port = 3000;
+var ip = '0.0.0.0';
 
-const app = express();
-const compiler = webpack(config);
-
-app.use(require('webpack-dev-middleware')(compiler, {
-  noInfo: true,
-  publicPath: config.output.publicPath
-}));
-
-app.use(require('webpack-hot-middleware')(compiler));
-
-app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, '/index.html'));
-});
-
-app.listen(3000, 'localhost', function(err) {
+new WebpackDevServer(webpack(config), {
+  publicPath: config.output.publicPath,
+  historyApiFallback: true,
+  hot: true,
+  stats: {
+    colors: true
+  },
+}).listen(port, ip, function(err) {
   if (err) {
-    console.log(err);
-    return;
+    return console.log(err);
   }
 
-  console.log('devServer is running at http://localhost:3000/');
+  console.log('Listening at ' + ip + ':' + port);
 });
