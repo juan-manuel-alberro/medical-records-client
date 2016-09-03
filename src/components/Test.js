@@ -6,7 +6,7 @@ class Test extends React.Component {
       <div className="welcome">
         <h2>Test page for Patients</h2>
         <div className="test-div">
-          <p>Some info in here</p>
+          <p>Some info in here!</p>
         </div>
       </div>
     );

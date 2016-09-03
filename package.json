@@ -5,10 +5,10 @@
   "main": "webpack.config.js",
   "scripts": {
     "clear": "rimraf dist",
-    "dev": "cross-env NODE_ENV=development webpack --config webpack.config.dev.js",
-    "build": "npm run clear && cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
+    "dev": "cross-env NODE_ENV=development webpack --progress --colors --config webpack.config.dev.js",
+    "build": "npm run clear && cross-env NODE_ENV=production webpack --progress --colors --config webpack.config.prod.js",
     "start": "node server.js",
-    "test": "ava --tap"
+    "test": "cross-env NODE_ENV=testing ava --tap"
   },
   "repository": {
     "type": "git",
@@ -44,7 +44,6 @@
     "cross-env": "^2.0.1",
     "css-loader": "^0.24.0",
     "eventsource-polyfill": "^0.9.6",
-    "express": "^4.13.4",
     "history": "^3.2.1",
     "html-webpack-plugin": "^2.8.1",
     "postcss-cssnext": "^2.4.0",
@@ -54,11 +53,13 @@
     "react-addons-css-transition-group": "^15.3.1",
     "react-addons-test-utils": "^15.3.1",
     "react-dom": "^15.3.1",
+    "react-hot-loader": "^3.0.0-beta.3",
     "react-router": "^2.0.0",
     "rimraf": "^2.5.1",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13",
     "webpack-dev-middleware": "^1.5.1",
+    "webpack-dev-server": "^1.15.1",
     "webpack-hot-middleware": "^2.6.4"
   }
 }
