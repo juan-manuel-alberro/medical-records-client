@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--red);
+  color: var(--white);
+  font-size: 13px;
+  font-family: sans-serif;
+}

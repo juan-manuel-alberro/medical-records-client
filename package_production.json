@@ -1,0 +1,18 @@
+{
+  "name": "medical-records-client",
+  "version": "0.0.5",
+  "description": "Medical records client",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juan-manuel-alberro/medical-records-client.git"
+  },
+  "keywords": [],
+  "author": "juan-manuel-alberro",
+  "license": "MIT"
+}
