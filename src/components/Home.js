@@ -6,7 +6,7 @@ class Home extends React.Component {
       <div className="welcome">
         <h2>Just setting up React for the front-end app!</h2>
       </div>
-    )
+    );
   }
 }
 

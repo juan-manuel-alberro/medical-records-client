@@ -16,7 +16,7 @@ class App extends React.Component {
           {this.props.children}
         </div>
       </div>
-    )
+    );
   }
 }
 
