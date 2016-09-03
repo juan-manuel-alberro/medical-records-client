@@ -9,7 +9,7 @@ class NotFound extends React.Component {
           <p>Sorry, page was not found.</p>
         </div>
       </div>
-    )
+    );
   }
 }
 

@@ -9,7 +9,7 @@ class Test extends React.Component {
           <p>Some info in here</p>
         </div>
       </div>
-    )
+    );
   }
 }
 

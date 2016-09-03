@@ -4,6 +4,7 @@ const autoprefixer = require('autoprefixer');
 const cssnext = require('postcss-cssnext');
 const impy = require('postcss-import');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const common = require('./webpack.common');
 
 module.exports = {
   devtool: 'source-map',
@@ -43,10 +44,5 @@ module: {
       }
     ]
   },
-  postcss: function () {
-    return {
-      defaults: [impy, cssnext],
-      cleaner:  [autoprefixer({ browsers: ['last 2 version'] })]
-    };
-  }
+  postcss: common.postcss(impy, cssnext, autoprefixer)
 };

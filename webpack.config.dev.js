@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const cssnext = require('postcss-cssnext');
 const impy = require('postcss-import');
+const common = require('./webpack.common');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -35,10 +36,5 @@ module.exports = {
       }
     ]
   },
-  postcss: function () {
-    return {
-      defaults: [impy, cssnext],
-      cleaner:  [autoprefixer({ browsers: ['last 2 version'] })]
-    };
-  }
+  postcss: common.postcss(impy, cssnext, autoprefixer)
 };
