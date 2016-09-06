@@ -1,20 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router';
+import Navigation from './Navigation';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="welcome">
-        <h1>My app</h1>
-        <nav>
-          <li><Link to="/home">Home</Link></li>
-          <li><Link to="/patients">Patients</Link></li>
-          <li><Link to="/notfound">Not Found</Link></li>
-          <li><Link to="/asddsa">Random</Link></li>
-        </nav>
-        <div className="detail">
+      <div id="wrapper">
+      <Navigation />
+      <div id="page-wrapper">
           {this.props.children}
-        </div>
+      </div>
       </div>
     );
   }

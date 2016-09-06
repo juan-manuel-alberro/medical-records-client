@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, Link, browserHistory } from 'react-router';
-import routes from './config/routes';
+import routes from './config/Routes';
 
 import './App.css';
 

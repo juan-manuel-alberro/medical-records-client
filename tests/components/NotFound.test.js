@@ -1,7 +1,7 @@
 import test from 'ava';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
-import NotFound from './NotFound';
+import NotFound from '../../src/components/NotFound';
 
 const shallowRenderer = TestUtils.createRenderer();
 shallowRenderer.render(<NotFound />);

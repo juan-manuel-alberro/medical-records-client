@@ -1,13 +1,13 @@
 import React from 'react';
 
-class NotFound extends React.Component {
+class Dashboard extends React.Component {
   render() {
     return (
       <div className="row">
         <div className="col-lg-12">
-          <h2>404</h2>
+          <h2>Dashboard page for Patients</h2>
           <div className="test-div">
-            <p>Sorry, page was not found.</p>
+            <p>Some info in here!</p>
           </div>
         </div>
       </div>
@@ -15,4 +15,4 @@ class NotFound extends React.Component {
   }
 }
 
-export default NotFound;
+export default Dashboard;
