@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juan-manuel-alberro/medical-records-client.git"
+    "url": "git@github.com:juan-manuel-alberro/medical-records-client.git"
   },
   "keywords": [],
   "author": "juan-manuel-alberro",

@@ -1,6 +1,6 @@
 # Medical Records - Client App
 
-[![bitHound Overall Score](https://www.bithound.io/github/juan-manuel-alberro/medical-records-client/badges/score.svg)](https://www.bithound.io/github/juan-manuel-alberro/medical-records-client)
+[![bitHound Overall Score](https://www.bithound.io/github/juan-manuel-alberro/medical-records-client/badges/score.svg)](https://www.bithound.io/github/juan-manuel-alberro/medical-records-client) [![Build Status](https://travis-ci.org/juan-manuel-alberro/medical-records-client.svg?branch=travis-config)](https://travis-ci.org/juan-manuel-alberro/medical-records-client)
 
 ## Start dev server
 1. Run ```npm start``` command
