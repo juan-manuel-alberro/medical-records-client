@@ -8,8 +8,8 @@
     "dev": "cross-env NODE_ENV=development webpack --progress --colors --config webpack.config.dev.js",
     "build": "npm run clear && cross-env NODE_ENV=production webpack --progress --colors --config webpack.config.prod.js",
     "start": "node server.js",
-    "test": "cross-env NODE_ENV=testing ava --verbose",
-    "coverage": "cross-env NODE_ENV=testing nyc ava --verbose"
+    "test": "nyc ava --verbose",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
