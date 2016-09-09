@@ -22,7 +22,6 @@ class PatientsList extends React.Component {
       .getRequest(API.patients)
       .then( (res, err) => {
         if (err) {
-          console.log(err);
           return;
         }
         this.setState({
