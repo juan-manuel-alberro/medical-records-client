@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var config = require('./webpack.config.dev');
-var port = 3000;
+var port = 3001;
 var ip = '0.0.0.0';
 
 new WebpackDevServer(webpack(config), {
