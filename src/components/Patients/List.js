@@ -19,7 +19,7 @@ class PatientsList extends React.Component {
 
   componentDidMount() {
     Requests
-      .getRequest(API.patients)
+      .getRequest(new API().getEndpoint('patients'))
       .then( (res, err) => {
         if (err) {
           return;
@@ -36,7 +36,7 @@ class PatientsList extends React.Component {
       <div className="row">
         <div className="col-lg-12">
           <Title title="Listado de Pacientes" />
-          <Loader loaded={this.state.showResults} options={Sitewide.loader}>
+          <Loader loaded={this.state.showResults} options={Sitewide.getLoaderConfig()}>
             <BootstrapTable data={this.state.patients} pagination={true} search={true} noDataText="Sin resultados" searchPlaceholder="Buscar">
               <TableHeaderColumn dataField="_id" isKey={true} width="50" hidden={true}>ID</TableHeaderColumn>
               <TableHeaderColumn dataField="lastname" dataSort={true}>Apellido</TableHeaderColumn>

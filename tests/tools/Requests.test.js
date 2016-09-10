@@ -3,7 +3,6 @@ import mocker from 'superagent-mocker';
 import request from 'superagent';
 
 import Requests from '../../src/tools/Requests';
-import API from '../../src/config/API';
 
 let mock = mocker(request);
 
